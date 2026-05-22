@@ -7,10 +7,10 @@ const username:string|null="PolarBear121"   // Do CHANGE the username everytime 
 const password:string|null="Bazinga"
 const url = 'https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC'
 const testData = [
-  { username: 'user111', password:null, name:'Purnasha', surname:'Admin'},// checking login FAILS if null password is sent to login
-  { username: null, password:'password1', name:'Purnota', surname:'Admin'},// checking login FAILS if null username is sent to login
+  { username: 'user111', password:null, name:'Polar', surname:'Admin'},// checking login FAILS if null password is sent to login
+  { username: null, password:'password1', name:'PolarBear', surname:'Admin'},// checking login FAILS if null username is sent to login
   { username: 'user211', password:'password1', name:null, surname:'Admin'},// checking login FAILS if null name is sent to customer registration
-  { username: 'user311', password:'password1', name:'Purnasha', surname:null}// checking login FAILS if null surname is sent to customer registration
+  { username: 'user311', password:'password1', name:'NewPolarBear', surname:null}// checking login FAILS if null surname is sent to customer registration
 ];
 
 test('Positive Scenario', async ({ page }) => { //Positive Test Scenario
