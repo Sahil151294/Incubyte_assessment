@@ -47,6 +47,7 @@ export class LoginPage {
     await this.page.locator("//input[@name='username']").fill(username)
     await this.page.locator("//input[@name='password']").fill(password)
     await this.page.getByText('Log In').click()
+    expect(await this.page.getByRole('heading').first().textContent()).toContain("Account Services")
   }
 }
 
