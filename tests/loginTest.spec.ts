@@ -16,7 +16,7 @@ test.fail('Unsuccessful login with unregistered credentials', async ({ page }) =
 test.fail('Unsuccessful login with empty username', async ({ page }) => {
   const originPag = new LoginPage(page, url);
   await originPag.goto()
-  await originPag.customerLogin("Choco chip", "muffin")
+  await originPag.customerLogin("", "muffin")
 })
 
 test.fail('Unsuccessful login with empty password', async ({ page }) => {
